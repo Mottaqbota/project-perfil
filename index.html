@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,19 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <section>
     <div class="preview-container">
-        <div class="card-img">  
-          <div class="card-hoverImg">
-            <input type="file"><ion-icon name="create-outline"></ion-icon>Alterar Foto</button>
-          </div>
-          <img class="img-preview" src="https://s2.glbimg.com/hCnSCQZf0aeSXfVAHNPAgrNyoAc=/smart/e.glbimg.com/og/ed/f/original/2020/06/15/bob-esponja.jpg" alt="">
+      <div class="card-img">
+        <label class="card-hoverImg">
+            <input type="file" id="inputSelectImg">
+            <ion-icon name="create-outline"></ion-icon>
+            <p>Escolher uma imagem</p>
+        </label>
+        <img id="img-preview" src="" alt="">
 
-        </div>
+      </div>
       <input type="text" id="imgInput" placeholder="Insira a URL da imagem">
       <!-- <input type="file" name="" id=""> -->
       <button onclick="changeImg()">Alterar imagem do perfil</button>
@@ -36,4 +40,5 @@
 
   <script src="scripts.js"></script>
 </body>
+
 </html>
